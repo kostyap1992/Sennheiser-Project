@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  max-width: 116rem;
+  margin: 0 auto;
+}
+
+.headline-secondary {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 6rem;
+  gap: 2.2rem;
+  padding: 2.2rem;
+}
+
+.btn-right {
+  right: -2%;
+}
+
+.btn-left {
+  left: -2%;
+}
+
+.no-mrgn-right {
+  gap: 22rem !important;
+}
+
+.info-box {
+  padding: 0rem 2rem;
+}
+
+.more-info-btn {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 28rem;
+  border: none;
+  margin: 3rem 0 3rem 0;
+}
+
+.info-link {
+  transition: all 0.3s;
+  opacity: 1;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  color: #000;
+  background-color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.5;
+}
+
+.more-info-btn:hover .info-link {
+  opacity: 0;
+}
+
+.info-hover {
+  transition: all 0.3s;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 52rem;
+  text-align: start;
+}
+
+.info-heading {
+  text-align: start;
+  font-size: 2.2rem;
+  margin-bottom: 2.4rem;
+  color: #fff;
+  letter-spacing: 1.5;
+}
+
+.info-description {
+  text-align: start;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #fff;
+  letter-spacing: 1.5;
+}
+
+.info-description span {
+  text-decoration: underline;
+}
+
+.more-info-btn:hover .info-hover {
+  opacity: 1;
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem 2rem 1rem 0rem;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #219ebc;
+  color: #fff;
+  width: fit-content;
+  gap: 1rem;
+  border-radius: 6rem;
+}
+
+.btn-link:hover {
+  cursor: pointer;
+}
+
+.arrow-right {
+  font-size: 2.4rem;
+  opacity: 1;
+  transition: all 0.3s;
+  transition-delay: 0.3s;
+}
+.arrow-left {
+  font-size: 2.4rem;
+  opacity: 0;
+  transform: translateX(-4rem);
+  transition: all 0.3s;
+}
+
+.btn-link:hover .arrow-right {
+  transform: translateX(4rem);
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.btn-link:hover .arrow-left {
+  opacity: 1;
+  transform: translateX(2rem);
+  transition-delay: 0.3s;
+}
+
+.btn-link p {
+  transition: all 0.3s;
+}
+
+.btn-link:hover p {
+  transform: translateX(2rem);
+  transition-delay: 0.3s;
+}

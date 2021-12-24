@@ -1,0 +1,139 @@
+/**************************/
+/* BELOW 1500px  */
+/**************************/
+
+@media (max-width: 94rem) {
+  .hero-container {
+    padding: 0rem 17rem;
+    max-width: 150rem;
+  }
+}
+
+/**************************/
+/* BELOW 1250px  */
+/**************************/
+
+@media (max-width: 78rem) {
+  .menu-btn {
+    display: block;
+  }
+
+  .main-nav-list li:not(.cart-btn, .menu-btn) {
+    display: none;
+  }
+
+  .main-nav-list {
+    gap: 2rem;
+  }
+
+  .logo {
+    height: 2rem;
+  }
+
+  .header {
+    max-width: 125rem;
+    padding: 1rem 2rem;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .hero-box {
+    top: 100%;
+    left: 3.6rem;
+    width: auto;
+    transform: translate(0, 0);
+    margin-top: 2rem;
+  }
+
+  .hero-text-description {
+    color: #222;
+    font-size: 1.4rem;
+  }
+
+  .headline-secondary {
+    font-size: 2.4rem;
+  }
+  .section-hero {
+    margin-bottom: 24rem;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headline-text-box {
+    height: 50rem;
+  }
+
+  .product-type-right {
+    display: none;
+  }
+
+  .products-carousel-btn {
+    display: block;
+  }
+}
+
+/**************************/
+/* BELOW 1000px  */
+/**************************/
+
+@media (max-width: 63rem) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-product-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-product-type-right {
+    display: none;
+  }
+
+  .dots button:last-child {
+    display: block;
+  }
+
+  .hero-img {
+    height: fit-content;
+  }
+}
+
+/**************************/
+/* BELOW 700px  */
+/**************************/
+
+@media (max-width: 44rem) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .logo-footer {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product-type-middle {
+    display: none;
+  }
+
+  .featured-product-types {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-product-type-middle {
+    display: none;
+  }
+
+  .dots {
+    display: none;
+  }
+}
